@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAWALAKOT BUY AND SELL | Property &amp; Construction in Rawalakot, AJK and Pakistan</title>
+<meta name="description" content="Buy, sell and build property in Rawalakot, Azad Jammu and Kashmir and across Pakistan. Trusted real estate and construction company.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container nav-wrap">
+    <a href="#home" class="logo" aria-label="Rawalakot Buy and Sell home">
+      <span class="logo-mark">R</span>
+      <span class="logo-text"><strong>RAWALAKOT</strong><small>BUY AND SELL</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#properties">Properties</a>
+      <a href="#buy">Buy Property</a>
+      <a href="#sell">Sell Property</a>
+      <a href="#construction">Construction</a>
+      <a href="#projects">Our Projects</a>
+      <a href="#about">About Us</a>
+      <a href="#contact" class="btn btn-gold nav-cta">Contact Us</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg" role="img" aria-label="Modern house in the Kashmir hills"></div>
+  <div class="container hero-inner">
+    <p class="badge">Rawalakot, Azad Jammu &amp; Kashmir</p>
+    <h1>Find Your Dream Property. Build Your Future.</h1>
+    <p class="hero-sub">Your trusted destination for property buying, selling, and construction services across Azad Jammu &amp; Kashmir and major cities of Pakistan.</p>
+    <div class="hero-actions">
+      <a href="#properties" class="btn btn-gold">Browse Properties</a>
+      <a href="#sell" class="btn btn-outline">List Your Property</a>
+    </div>
+    <form class="search" id="searchForm">
+      <label>Location
+        <select id="sLocation"><option value="">All locations</option></select>
+      </label>
+      <label>Type
+        <select id="sType"><option value="">All types</option><option>House</option><option>Plot</option><option>Commercial</option><option>Farmhouse</option></select>
+      </label>
+      <label>Max budget
+        <select id="sBudget"><option value="">Any budget</option><option value="5000000">Up to PKR 50 Lac</option><option value="10000000">Up to PKR 1 Crore</option><option value="30000000">Up to PKR 3 Crore</option><option value="100000000">Up to PKR 10 Crore</option></select>
+      </label>
+      <button class="btn btn-gold" type="submit">Search properties</button>
+    </form>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div><b data-count="450">0</b><span>Properties sold</span></div>
+    <div><b data-count="120">0</b><span>Homes constructed</span></div>
+    <div><b data-count="15">0</b><span>Years of experience</span></div>
+    <div><b data-count="12">0</b><span>Cities served</span></div>
+  </div>
+</section>
+
+<!-- PROPERTIES -->
+<section class="section" id="properties">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Featured Properties</h2>
+      <p>Verified homes, plots and commercial spaces in Rawalakot, Poonch and beyond.</p>
+    </div>
+    <div class="filters" id="filters" role="tablist">
+      <button class="chip active" data-f="all">All</button>
+      <button class="chip" data-f="House">Houses</button>
+      <button class="chip" data-f="Plot">Plots</button>
+      <button class="chip" data-f="Commercial">Commercial</button>
+      <button class="chip" data-f="Farmhouse">Farmhouses</button>
+    </div>
+    <div class="grid cards" id="propGrid"></div>
+    <p class="empty" id="propEmpty" hidden>No properties match your search. Try a different location or budget.</p>
+  </div>
+</section>
+
+<!-- BUY -->
+<section class="section alt" id="buy">
+  <div class="container split">
+    <div class="split-img"><img src="732654816_1639414968188544_5038177559457358161_n.jpg" alt="Modern family home exterior" loading="lazy"></div>
+    <div>
+      <h2>Buy Property with Confidence</h2>
+      <p class="lead">We guide you from the first viewing to the final transfer, so you never buy blind.</p>
+      <ul class="steps">
+        <li><b>Tell us what you need</b><span>Budget, area, size and purpose. We shortlist only what fits.</span></li>
+        <li><b>Visit and verify</b><span>We arrange site visits and check ownership, fard and mutation records.</span></li>
+        <li><b>Negotiate fairly</b><span>We help you agree a market price backed by recent local sales.</span></li>
+        <li><b>Transfer and handover</b><span>Stamp paper, registry and possession handled with legal support.</span></li>
+      </ul>
+      <a href="#contact" class="btn btn-navy">Talk to a buying advisor</a>
+    </div>
+  </div>
+</section>
+
+<!-- SELL -->
+<section class="section" id="sell">
+  <div class="container split reverse">
+    <div>
+      <h2>Sell Your Property Faster</h2>
+      <p class="lead">Share your property details and our team will call you with a free valuation within 24 hours.</p>
+      <form class="form card-form" id="sellForm" novalidate>
+        <div class="row">
+          <label>Full name<input name="name" type="text" required autocomplete="name"></label>
+          <label>Phone / WhatsApp<input name="phone" type="tel" required placeholder="03XX XXXXXXX" autocomplete="tel"></label>
+        </div>
+        <div class="row">
+          <label>Property type<select name="type" required><option value="">Select</option><option>House</option><option>Plot</option><option>Commercial</option><option>Farmhouse</option></select></label>
+          <label>City / area<input name="city" type="text" required placeholder="e.g. Rawalakot, Banjosa"></label>
+        </div>
+        <label>Expected price (PKR)<input name="price" type="text" inputmode="numeric" placeholder="e.g. 8500000"></label>
+        <label>Details<textarea name="details" rows="3" placeholder="Size, condition, documents available"></textarea></label>
+        <button class="btn btn-gold" type="submit">Request free valuation</button>
+        <p class="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="split-img"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1000&q=80" alt="House ready for sale" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- CONSTRUCTION -->
+<section class="section dark" id="construction">
+  <div class="container">
+    <div class="sec-head light">
+      <h2>Construction Services</h2>
+      <p>Designed for mountain terrain, snowfall and seismic safety. Built to last.</p>
+    </div>
+    <div class="grid services">
+      <article class="service"><h3>Residential Construction</h3><p>Grey structure or complete finishing for homes of any size, with transparent per square foot rates.</p></article>
+      <article class="service"><h3>Commercial Buildings</h3><p>Shops, plazas, hotels and guest houses planned for footfall and tourism.</p></article>
+      <article class="service"><h3>Architecture and Design</h3><p>Floor plans, 3D elevations and approvals suited to your plot and view.</p></article>
+      <article class="service"><h3>Renovation and Remodeling</h3><p>Upgrade old homes with new layouts, roofing, kitchens and bathrooms.</p></article>
+      <article class="service"><h3>Hill and Retaining Works</h3><p>Slope stabilization, retaining walls and drainage for sloped plots.</p></article>
+      <article class="service"><h3>Cost Estimation</h3><p>Detailed material and labor estimates before you commit to a single brick.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Our Projects</h2>
+      <p>A selection of homes and buildings we have delivered.</p>
+    </div>
+    <div class="grid projects" id="projGrid"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section alt" id="about">
+  <div class="container split">
+    <div class="split-img"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80" alt="Construction team on site" loading="lazy"></div>
+    <div>
+      <h2>About Rawalakot Buy and Sell</h2>
+      <p class="lead">Born in Rawalakot, we have helped local families and overseas Pakistanis buy, sell and build with honesty for over fifteen years.</p>
+      <p>We know the land, the families and the paperwork. That local knowledge lets us advise on fair prices, clean titles and sensible construction, whether you live in Poonch or abroad.</p>
+      <div class="values">
+        <div><h4>Clear titles</h4><p>Every listing is document-checked.</p></div>
+        <div><h4>Fair pricing</h4><p>Rates based on real local sales.</p></div>
+        <div><h4>Overseas support</h4><p>Video visits and updates for families abroad.</p></div>
+        <div><h4>Quality builds</h4><p>Engineer-supervised construction.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section">
+  <div class="container">
+    <div class="sec-head"><h2>What Our Clients Say</h2></div>
+    <div class="slider" id="slider" aria-roledescription="carousel">
+      <div class="slides" id="slides"></div>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section alt" id="contact">
+  <div class="container contact-grid">
+    <div>
+      <h2>Contact Us</h2>
+      <p class="lead">Visit our office, call, or send a message. We reply the same day.</p>
+      <ul class="info">
+        <li><b>Office</b><span>Main Bazaar, Rawalakot, Poonch, Azad Jammu &amp; Kashmir</span></li>
+        <li><b>Phone</b><a href="tel:+920000000000">+92 000 0000000</a></li>
+        <li><b>WhatsApp</b><a href="https://wa.me/920000000000" target="_blank" rel="noopener">+92 000 0000000</a></li>
+        <li><b>Email</b><a href="mailto:info@rawalakotbuyandsell.pk">info@rawalakotbuyandsell.pk</a></li>
+        <li><b>Hours</b><span>Mon to Sat, 9:00 am to 7:00 pm</span></li>
+      </ul>
+    </div>
+    <form class="form card-form" id="contactForm" novalidate>
+      <div class="row">
+        <label>Full name<input name="name" type="text" required autocomplete="name"></label>
+        <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
+      </div>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>I am interested in<select name="topic"><option>Buying property</option><option>Selling property</option><option>Construction</option><option>Other</option></select></label>
+      <label>Message<textarea name="message" rows="4" required></textarea></label>
+      <button class="btn btn-gold" type="submit">Send message</button>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container foot-grid">
+    <div>
+      <a href="#home" class="logo"><span class="logo-mark">R</span><span class="logo-text"><strong>RAWALAKOT</strong><small>BUY AND SELL</small></span></a>
+      <p>Property buying, selling and construction in Rawalakot, Azad Jammu &amp; Kashmir and across Pakistan.</p>
+    </div>
+    <div><h4>Explore</h4><a href="#properties">Properties</a><a href="#buy">Buy Property</a><a href="#sell">Sell Property</a><a href="#projects">Our Projects</a></div>
+    <div><h4>Services</h4><a href="#construction">House construction</a><a href="#construction">Commercial buildings</a><a href="#construction">Renovation</a><a href="#construction">Cost estimation</a></div>
+    <div><h4>Cities</h4><span>Rawalakot</span><span>Islamabad</span><span>Rawalpindi</span><span>Lahore</span><span>Karachi</span></div>
+  </div>
+  <div class="container copy">&copy; <span id="year"></span> Rawalakot Buy and Sell. All rights reserved.</div>
+</footer>
+
+<a href="https://wa.me/920000000000" class="wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+<button class="totop" id="toTop" aria-label="Back to top">&uarr;</button>
+<script src="script.js"></script>
+</body>
+</html>
